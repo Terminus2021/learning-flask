@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <meta charset-"utf-8">
+    <title>{{user.username}} 的Flask 留言板</title>
+  </head>
+  <body>
+    <h1>欢迎来到{{user.username}}的Flask留言板！</h1>
+    {% for post in posts %}
+    <div><p>{{post.author.username}}：<b>{{post.body}}</b></p></div>
+    {% endfor %}
+    <span class="hidden-xs">Powered by Flask and Python.</span>
+  </body>
+</html>
